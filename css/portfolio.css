@@ -1,6 +1,6 @@
 body {
   background-color: #c8d0d0;
-  font-family: Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #3e4e54 !important;
   font-weight: 400;
 }
@@ -73,7 +73,7 @@ section:nth-child(even) {
 
 button {
   min-width: 167px;
-  margin: auto 25px;
+  margin: auto 29px;
   background-color: #c8d0d0;
   color: #3e4e54;
   text-align: center;
