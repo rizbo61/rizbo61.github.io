@@ -8,70 +8,84 @@
   </head>
   <body>
     <nav id="header">
-      <ul class="left">
-        <li><a href="#blog">Blog</a></li>
-      </ul>
-      <ul class="right">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="container col-md-12">
+        <ul class="left col-xs-12 col-md-1">
+          <li class="col-xs-12 col-md-6"><a href="#blog">Blog</a></li>
+        </ul>
+        <ul class="right col-xs-12 col-md-2">
+          <li class="col-xs-4 col-md-4"><a href="#about">About</a></li>
+          <li class="col-xs-4 col-md-4"><a href="#projects">Projects</a></li>
+          <li class="col-xs-4 col-md-4"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
     <div class="content-container">
 
       <section id="about">
-        <div id="intro">
-        <h1>About</h1>
-        <p>My name is Boris and I'm a web developer currently learning HTML, CSS, JavaScript and jQuery. You can check my work portfolio and contact information below.</p>
+        <div class="col-md-6 col-md-offset-3" id="intro">
+          <h1>About</h1>
+          <p>My name is Boris and I'm a web developer currently learning HTML, CSS, JavaScript and jQuery. You can check my work portfolio and contact information below.</p>
         </div>
         <div id="skills">
-          <button class="btn btn-flat" style="border-color: #2aa198 !important;">Web Development</button>
-          <button class="btn btn-flat" style="border-color: #d33682 !important;">HTML</button>
-          <button class="btn btn-flat" style="border-color: #edac35 !important;">CSS</button>
-          <button class="btn btn-flat" style="border-color: #268bd2 !important;">JavaScript</button>
-          <button class="btn btn-flat" style="border-color: #cb4b16 !important;">jQuery</button>
+          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #2aa198 !important;">Web Development</button>
+          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #d33682 !important;">HTML</button>
+          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #edac35 !important;">CSS</button>
+          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #268bd2 !important;">JavaScript</button>
+          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #cb4b16 !important;">jQuery</button>
         </div>
       </section>
 
       <section id="projects">
         <div id="intro">
-        <h1>Projects</h1>
+          <h1>Projects</h1>
         </div>
         <div class="container">
-          <div class="half">
+          <div class="col-md-6">
             <div class="thumbnail">
-              <img class="img-responsive" src="images/tribute-page.png">
+              <a href="https://rizbo61.github.io/tribute-page" target="_blank"><img class="img-responsive" src="images/tribute-page.png"></a>
               <div class="caption text-center">Tribute Page</div>
             </div>
           </div>
-          <div class="half">
+          <div class="col-md-6">
             <div class="thumbnail">
-              <img class="img-responsive" src="images/sketch-pad.png">
+              <a href="https://rizbo61.github.io/sketch-pad" target="_blank"><img class="img-responsive" src="images/sketch-pad.png"></a>
               <div class="caption text-center">Sketch-pad</div>
             </div>
           </div>
-          <div class="half">
+          <div class="col-md-6">
             <div class="thumbnail">
-              <img class="img-responsive" src="images/image-slider.png">
+              <a href="https://rizbo61.github.io/image-slider" target="_blank"><img class="img-responsive" src="images/image-slider.png"></a>
               <div class="caption text-center">Image Slider</div>
             </div>
           </div>
-          <div class="half">
+          <div class="col-md-6">
             <div class="thumbnail">
               <img class="img-responsive" src="images/placeholder.png">
               <div class="caption text-center">Twitch Placeholder</div>
             </div>
             </div>
           </div>
-        </div>
       </section>
 
       <section id="contact">
         <div id="intro">
           <h1>Contact</h1>
         </div>
+        <div class="container col-md-3 col-md-offset-4.5" id="contact-form">
+          <form action="placeholder.php">
+            <input class="form-control" type="text" name="name" value="Name">
+            <input class="form-control" type="text" name="email" value="E-mail">
+            <input class="form-control" type="text" name="phone" value="Phone number">
+            <input class="form-control" type="text" name="message" value="Message">
+            <button class="btn btn-flat" id="submit" type="submit">Submit</button>
+          </form>
+        </div>
       </section>
+
+      <div class="panel-body text-center">
+          Written and coded by: <a href="https://www.freecodecamp.com/rizbo61">Boris M.</a>
+      </div>
 
     </div>
   </body>

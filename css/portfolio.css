@@ -23,24 +23,28 @@ nav {
   border-color: rgba(0, 0, 0, 0.04);
 }
 
+nav > .container {
+  padding: 0;
+}
+
 .left {
   float: left;
-  padding-left: 0;
+  padding: 0;
 }
 
 .right {
   float: right;
+  padding: 0;
 }
 
 nav li {
   display: inline-block;
   list-style: none;
+  text-align: center;
 }
 
 nav a {
   color: #3e4e54;
-  display: inline-block;
-  padding: 0 16px;
   text-decoration: none !important;
   font-size: 16px;
   font-weight: 400;
@@ -61,22 +65,24 @@ section:nth-child(even) {
 }
 
 #intro {
-  margin: 0 auto;
-  width: 40%;
+  float: none;
 }
 
 #skills {
-  margin: 0 auto 0 auto;
-  padding: 160px 0 0 0;
+  margin: 0 auto;
+  padding: 140px 0 0 0;
   width: 60%;
 }
 
 button {
-  min-width: 167px;
-  margin: auto 29px;
+  float: none !important;
+  margin-top: 2.5%;
+  margin-left: 2.5%;
   background-color: #c8d0d0;
   color: #3e4e54;
   text-align: center;
+  word-wrap: break-word !important;
+  white-space: normal !important;
   font-weight: bold !important;
   font-size: 16px !important;
   border: 2px solid !important;
@@ -86,14 +92,9 @@ button:hover {
   color: #3e4e54 !important;
 }
 
-.half {
-  float: left;
-  width: 50%;
-}
-
 .thumbnail {
-  height: 250px;
-  width: 400px;
+  max-height: 250px;
+  max-width: 400px;
   margin: 40px auto;
   opacity: 0.8;
 }
@@ -108,4 +109,37 @@ button:hover {
   font-size: 13px;
   font-weight: bold;
   color: #3e4e54;
+}
+
+#contact-form {
+  float: none !important; 
+}
+
+input {
+ height: 45px !important;
+ margin-top: 5px !important;
+ border: none !important;
+ background-color: rgba(255, 255, 255, 0.7) !important;
+}
+
+input:focus {
+  opacity: 1 !important;
+}
+
+#submit {
+  margin: 10px 0 0 0;
+  border-color: #268bd2 !important;
+}
+
+#submit:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.panel-body {
+  border-top: 1px solid;
+  border-color: rgba(0, 0, 0, 0.04);
+}
+
+.panel-body a {
+  text-decoration: none !important;
 }
