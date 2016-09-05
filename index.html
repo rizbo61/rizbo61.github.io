@@ -8,33 +8,35 @@
   </head>
   <body>
     <nav id="header">
-      <div class="container col-md-12">
-        <ul class="left col-xs-12 col-md-1">
+      <div class="container col-sm-12 col-md-12">
+        <ul class="left col-xs-12 col-sm-1 col-md-1">
           <li class="col-xs-12 col-md-6"><a href="#blog">Blog</a></li>
         </ul>
-        <ul class="right col-xs-12 col-md-2">
-          <li class="col-xs-4 col-md-4"><a href="#about">About</a></li>
-          <li class="col-xs-4 col-md-4"><a href="#projects">Projects</a></li>
-          <li class="col-xs-4 col-md-4"><a href="#contact">Contact</a></li>
+        <ul class="right col-xs-12 col-sm-4 col-md-3">
+          <li class="col-xs-4 col-md-3"><a href="#about">About</a></li>
+          <li class="col-xs-4 col-md-3"><a href="#projects">Projects</a></li>
+          <li class="col-xs-4 col-md-3"><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <div class="content-container">
 
-      <section id="about">
-        <div class="col-md-6 col-md-offset-3" id="intro">
-          <h1>About</h1>
-          <p>My name is Boris and I'm a web developer currently learning HTML, CSS, JavaScript and jQuery. You can check my work portfolio and contact information below.</p>
-        </div>
-        <div id="skills">
-          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #2aa198 !important;">Web Development</button>
-          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #d33682 !important;">HTML</button>
-          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #edac35 !important;">CSS</button>
-          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #268bd2 !important;">JavaScript</button>
-          <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #cb4b16 !important;">jQuery</button>
-        </div>
-      </section>
+      <div id="background">
+        <section id="about">
+          <div class="col-md-6 col-md-offset-3" id="intro">
+            <h1>About</h1>
+            <p>My name is Boris and I'm a web developer currently learning HTML, CSS, JavaScript and jQuery. You can check my work portfolio and contact information below.</p>
+          </div>
+          <div id="skills">
+            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #2aa198 !important;">Web Development</button>
+            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #d33682 !important;">HTML</button>
+            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #edac35 !important;">CSS</button>
+            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #268bd2 !important;">JavaScript</button>
+            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #cb4b16 !important;">jQuery</button>
+          </div>
+        </section>
+      </div>
 
       <section id="projects">
         <div id="intro">
@@ -42,25 +44,25 @@
         </div>
         <div class="container">
           <div class="col-md-6">
-            <div class="thumbnail">
+            <div class="thumbnail bg-pic">
               <a href="https://rizbo61.github.io/tribute-page" target="_blank"><img class="img-responsive" src="images/tribute-page.png"></a>
               <div class="caption text-center">Tribute Page</div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="thumbnail">
+            <div class="thumbnail bg-pic">
               <a href="https://rizbo61.github.io/sketch-pad" target="_blank"><img class="img-responsive" src="images/sketch-pad.png"></a>
               <div class="caption text-center">Sketch-pad</div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="thumbnail">
+            <div class="thumbnail bg-pic">
               <a href="https://rizbo61.github.io/image-slider" target="_blank"><img class="img-responsive" src="images/image-slider.png"></a>
               <div class="caption text-center">Image Slider</div>
             </div>
           </div>
           <div class="col-md-6">
-            <div class="thumbnail">
+            <div class="thumbnail bg-pic">
               <img class="img-responsive" src="images/placeholder.png">
               <div class="caption text-center">Twitch Placeholder</div>
             </div>
@@ -72,12 +74,12 @@
         <div id="intro">
           <h1>Contact</h1>
         </div>
-        <div class="container col-xs-12 col-md-3 col-md-offset-4.5" id="contact-form">
+        <div class="container col-xs-12 col-sm-6 col-md-3 col-md-offset-4.5" id="contact-form">
           <form action="placeholder.php">
-            <input class="form-control" type="text" name="name" value="Name">
-            <input class="form-control" type="text" name="email" value="E-mail">
-            <input class="form-control" type="text" name="phone" value="Phone number">
-            <input class="form-control" type="text" name="message" value="Message">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="email" placeholder="E-mail">
+            <input type="text" name="phone" placeholder="Phone number">
+            <textarea name="message" placeholder="Message"></textarea>
             <button class="btn btn-flat" id="submit" type="submit">Submit</button>
           </form>
         </div>

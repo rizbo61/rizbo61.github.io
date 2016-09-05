@@ -1,7 +1,7 @@
 body {
-  background-color: #c8d0d0;
+  background-color: #3e4e54;
   font-family: Arial, Helvetica, sans-serif;
-  color: #3e4e54 !important;
+  color: #c8d0d0 !important;
   font-weight: 400;
 }
 
@@ -11,7 +11,7 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -19,8 +19,8 @@ nav {
   line-height: 48px;
   min-height: 48px;
   min-width: 100%;
-  border-bottom: 1px solid;
-  border-color: rgba(0, 0, 0, 0.04);
+  /*border-bottom: 1px solid;
+  border-color: rgba(255, 255, 255, 0.04);*/
 }
 
 nav > .container {
@@ -37,6 +37,14 @@ nav > .container {
   padding: 0;
 }
 
+.left li {
+  float: left;
+}
+
+.right li {
+  float: right;
+}
+
 nav li {
   display: inline-block;
   list-style: none;
@@ -44,15 +52,23 @@ nav li {
 }
 
 nav a {
-  color: #3e4e54;
+  color: #c8d0d0;
   text-decoration: none !important;
   font-size: 16px;
   font-weight: 400;
 }
 
 nav a:hover {
-  color: #93979C;
+  color: #FFFFFF;
 }
+
+/*#about {
+  padding-top: 0;
+}
+
+#header {
+  margin-bottom: 60px;
+}*/
 
 section {
   padding-top: 60px;
@@ -62,6 +78,28 @@ section {
 
 section:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+#background {
+  display: block;
+  position: relative;
+}
+
+#background::after {
+  content: "";
+  background: url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-49116.png);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  -webkit-filter: blur(2px) grayscale(100%);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px) grayscale(100%);
 }
 
 #intro {
@@ -75,11 +113,12 @@ section:nth-child(even) {
 }
 
 button {
+  min-width: 167px;
   float: none !important;
   margin-top: 2.5%;
   margin-left: 2.5%;
-  background-color: #c8d0d0;
-  color: #3e4e54;
+  background-color: transparent;
+  color: #c8d0d0;
   text-align: center;
   word-wrap: break-word !important;
   white-space: normal !important;
@@ -89,7 +128,7 @@ button {
 }
 
 button:hover {
-  color: #3e4e54 !important;
+  color: #FFFFFF !important;
 }
 
 .thumbnail {
@@ -97,18 +136,21 @@ button:hover {
   max-width: 400px;
   margin: 40px auto;
   opacity: 0.8;
+  background-color: transparent;
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 0.04);
 }
 
 .thumbnail:hover {
   opacity: 1;
-  border-color: #93979C;
+  border: 2px solid #c8d0d0;
 }
 
 .thumbnail .caption {
   padding: 4px;
   font-size: 13px;
   font-weight: bold;
-  color: #3e4e54;
+  color: #c8d0d0;
 }
 
 #contact-form {
@@ -116,14 +158,66 @@ button:hover {
 }
 
 input {
- height: 45px !important;
- margin-top: 5px !important;
- border: none !important;
- background-color: rgba(255, 255, 255, 0.7) !important;
+  height: 45px;
+  width: 100%;
+  padding: 6px 0;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #c8d0d0;
+  background-color: transparent;
+  color: #c8d0d0;
+  word-wrap: break-word !important;
 }
 
 input:focus {
-  opacity: 1 !important;
+  outline: none;
+}
+
+input:focus::-webkit-input-placeholder { 
+  color: transparent;
+}
+input:focus:-moz-placeholder { 
+  color: transparent;
+} 
+input:focus::-moz-placeholder { 
+  color: transparent;
+}
+input:focus:-ms-input-placeholder { 
+  color: transparent;
+}
+
+textarea {
+  min-height: 100px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 0;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #c8d0d0;
+  background-color: transparent;
+  color: #c8d0d0;
+  word-wrap: break-word !important;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea:focus::-webkit-input-placeholder { 
+  color: transparent;
+}
+textarea:focus:-moz-placeholder { 
+  color: transparent;
+} 
+textarea:focus::-moz-placeholder { 
+  color: transparent;
+}
+textarea:focus:-ms-input-placeholder { 
+  color: transparent;
 }
 
 #submit {
@@ -131,15 +225,15 @@ input:focus {
   border-color: #268bd2 !important;
 }
 
-#submit:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
 .panel-body {
   border-top: 1px solid;
-  border-color: rgba(0, 0, 0, 0.04);
+  border-color: rgba(255, 255, 255, 0.04);
 }
 
 .panel-body a {
   text-decoration: none !important;
+}
+
+.panel-body a:hover {
+  color: #268bd2;
 }
