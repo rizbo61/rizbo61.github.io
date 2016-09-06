@@ -4,36 +4,38 @@
     <title>Portfolio</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
     <link rel="stylesheet" href="css/portfolio.css">
   </head>
   <body>
     <nav id="header">
-      <div class="container col-sm-12 col-md-12">
-        <ul class="left col-xs-12 col-sm-1 col-md-1">
-          <li class="col-xs-12 col-md-6"><a href="#blog">Blog</a></li>
-        </ul>
-        <ul class="right col-xs-12 col-sm-4 col-md-3">
-          <li class="col-xs-4 col-md-3"><a href="#about">About</a></li>
-          <li class="col-xs-4 col-md-3"><a href="#projects">Projects</a></li>
-          <li class="col-xs-4 col-md-3"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="left">
+        <li><a href="https://github.com/rizbo61"><span class="fa fa-github"></span></a></li>
+        <li><a href="https://www.facebook.com/boris.muminovic"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="https://twitter.com/rizbo61/"><span class="fa fa-twitter"></span></a></li>
+      </ul>
+      <ul class="right">
+        <li style="padding-left: 0"><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <div class="content-container">
 
       <div id="background">
         <section id="about">
-          <div class="col-md-6 col-md-offset-3" id="intro">
+          <div id="intro">
             <h1>About</h1>
             <p>My name is Boris and I'm a web developer currently learning HTML, CSS, JavaScript and jQuery. You can check my work portfolio and contact information below.</p>
           </div>
           <div id="skills">
-            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #2aa198 !important;">Web Development</button>
-            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #d33682 !important;">HTML</button>
-            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #edac35 !important;">CSS</button>
-            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #268bd2 !important;">JavaScript</button>
-            <button class="btn btn-flat col-xs-12 col-md-2" style="border-color: #cb4b16 !important;">jQuery</button>
+            <button class="btn btn-flat" style="border-color: #2aa198 !important;">Web Development</button>
+            <button class="btn btn-flat" style="border-color: #d33682 !important;">HTML</button>
+            <button class="btn btn-flat" style="border-color: #edac35 !important;">CSS</button>
+            <button class="btn btn-flat" style="border-color: #268bd2 !important;">JavaScript</button>
+            <button class="btn btn-flat" style="border-color: #cb4b16 !important;">jQuery</button>
           </div>
         </section>
       </div>
@@ -42,32 +44,25 @@
         <div id="intro">
           <h1>Projects</h1>
         </div>
-        <div class="container">
-          <div class="col-md-6">
-            <div class="thumbnail bg-pic">
-              <a href="https://rizbo61.github.io/tribute-page" target="_blank"><img class="img-responsive" src="images/tribute-page.png"></a>
-              <div class="caption text-center">Tribute Page</div>
+        <div class="first-wrapper">     
+            <div class="project-image" id="tribute-page">
+              <a href="https://rizbo61.github.io/tribute-page" target="_blank"></a>
+              <h2>Tribute Page</h2>
             </div>
+          <div class="project-image" id="sketch-pad">
+            <a href="https://rizbo61.github.io/sketch-pad" target="_blank"></a>
+            <h2>Sketch-pad</h2>
           </div>
-          <div class="col-md-6">
-            <div class="thumbnail bg-pic">
-              <a href="https://rizbo61.github.io/sketch-pad" target="_blank"><img class="img-responsive" src="images/sketch-pad.png"></a>
-              <div class="caption text-center">Sketch-pad</div>
-            </div>
+        </div>
+        <div class="second-wrapper">
+          <div class="project-image" id="image-slider">
+            <a href="https://rizbo61.github.io/image-slider" target="_blank"></a>
+            <h2>Image Slider</h2>  
           </div>
-          <div class="col-md-6">
-            <div class="thumbnail bg-pic">
-              <a href="https://rizbo61.github.io/image-slider" target="_blank"><img class="img-responsive" src="images/image-slider.png"></a>
-              <div class="caption text-center">Image Slider</div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="thumbnail bg-pic">
-              <img class="img-responsive" src="images/placeholder.png">
-              <div class="caption text-center">Twitch Placeholder</div>
-            </div>
-            </div>
-          </div>
+          <div class="project-image" id="twitch-placeholder">
+            <h2>Twitch Placeholder</h2>
+          </div>  
+        </div>
       </section>
 
       <section id="contact">
