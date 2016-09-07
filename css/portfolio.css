@@ -115,12 +115,104 @@ section:nth-child(even) {
   margin: auto;
 }
 
+#description {
+  width: 57.3%;
+  min-height: 160px;
+  height: auto;
+  margin: 30px auto auto auto;
+  display: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+
+#web-development-description {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: none;
+  border: 2px solid #2aa198;
+  border-radius: 4px;
+  padding: 22px;
+  text-align: left;
+}
+
+#web-development-description p {
+  font-size: 16px;
+  margin: 0;
+}
+
+#html-description {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: none;
+  border: 2px solid #d33682;
+  border-radius: 4px;
+  padding: 32px;
+  text-align: left;
+}
+
+#html-description p {
+  font-size: 16px;
+  margin: 0;
+}
+
+#css-description {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: none;
+  border: 2px solid #edac35;
+  border-radius: 4px;
+  padding: 22px;
+  text-align: left;
+}
+
+#css-description p {
+  font-size: 16px;
+  margin: 0;
+}
+
+#javascript-description {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: none;
+  border: 2px solid #268bd2;
+  border-radius: 4px;
+  padding: 28px;
+  text-align: left
+}
+
+#javascript-description p {
+  font-size: 16px;
+  margin: 0;
+}
+
+#jquery-description {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: none;
+  border: 2px solid #cb4b16;
+  border-radius: 4px;
+  padding: 44px;
+  text-align: left
+}
+
+#jquery-description p {
+  font-size: 16px;
+  margin: 0;
+}
+
+
 #skills {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
-  padding: 140px 0 0 0;
+  padding: 180px 0 0 0;
   width: 60%;
 }
 
@@ -134,6 +226,7 @@ button {
   font-weight: bold !important;
   font-size: 16px !important;
   border: 2px solid !important;
+  transition: background-color 0.5s ease-in-out !important;
 }
 
 button:visited {
@@ -143,10 +236,32 @@ button:visited {
 
 button:focus {
   outline: none !important;
+  color: #FFFFFF !important;
 }
 
 button:hover {
   color: #FFFFFF !important;
+}
+
+#web-development:focus {
+  background-color: #2aa198 !important;
+  transition: all 0.5s ease-in-out !important;
+}
+
+#html:focus {
+  background-color: #d33682 !important;
+}
+
+#css:focus {
+  background-color: #edac35 !important;
+}
+
+#javascript:focus {
+  background-color: #268bd2 !important;
+}
+
+#jquery:focus {
+  background-color: #cb4b16 !important;
 }
 
 .first-wrapper {
@@ -197,7 +312,8 @@ button:hover {
 }
 
 #contact-form {
-  float: none !important; 
+  width: 25%;
+  margin: auto;
 }
 
 input {
@@ -211,7 +327,12 @@ input {
   border-bottom: 2px solid #c8d0d0;
   background-color: transparent;
   color: #c8d0d0;
-  word-wrap: break-word !important;
+  word-wrap: break-word !important; 
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #3e4e54 inset;
+    -webkit-text-fill-color: #c8d0d0;
 }
 
 input:focus {
@@ -421,6 +542,12 @@ textarea:focus:-ms-input-placeholder {
   transition: all 0.5s ease-in-out;
 }
 
+@media all and (max-width: 1000px) {
+  #contact-form {
+    width: 40%;
+  }
+}
+
 @media all and (max-width: 640px) {
   #intro {
     width: 100%;
@@ -437,6 +564,30 @@ textarea:focus:-ms-input-placeholder {
     padding-right: 15px;
   }
 
+  #description {
+    width: 90%;
+  }
+
+  #web-development-description {
+    padding: 15px;
+  }
+
+  #html-description {
+    padding: 15px;
+  }
+
+  #css-description {
+    padding: 15px;
+  }
+
+  #javascript-description {
+    padding: 15px;
+  }
+
+  #jquery-description {
+    padding: 15px;
+  }
+
   #skills {
     width: 100%;
     padding-top: 100px;
@@ -451,5 +602,11 @@ textarea:focus:-ms-input-placeholder {
   .second-wrapper {
     width: 100%;
     flex-flow: row wrap;
+  }
+
+  #contact-form {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
