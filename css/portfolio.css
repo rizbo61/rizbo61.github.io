@@ -243,6 +243,7 @@ button:hover {
   color: #FFFFFF !important;
 }
 
+
 #web-development:focus {
   background-color: #2aa198;
 }
@@ -262,6 +263,7 @@ button:hover {
 #jquery:focus {
   background-color: #cb4b16;
 }
+
 
 .first-wrapper {
   width: 80%;
