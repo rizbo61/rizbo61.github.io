@@ -25,14 +25,20 @@ p {
 #header {
   width: 100%;
   height: auto;
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;  
   overflow-x: auto;
   line-height: 48px;
 }
 
 .left {
   width: 100%;
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;  
   justify-content: flex-start;
   padding-left: 20px;
   list-style: none;
@@ -42,7 +48,10 @@ p {
 
 .right {
   width: 100%;
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;  
   justify-content: flex-end;
   padding-right: 20px;
   padding-left: 0;
@@ -208,7 +217,10 @@ section:nth-child(even) {
 
 
 #skills {
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;       
   flex-flow: row wrap;
   justify-content: space-around;
   margin: 0 auto;
@@ -268,7 +280,10 @@ button:hover {
 .first-wrapper {
   width: 80%;
   margin: 80px auto auto auto;
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;  
   flex-flow: nowrap;
   justify-content: center;
 }
@@ -276,7 +291,10 @@ button:hover {
 .second-wrapper {
   width: 80%;
   margin: auto;
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;  
   flex-flow: nowrap;
   justify-content: center;
   margin-bottom: 40px;
