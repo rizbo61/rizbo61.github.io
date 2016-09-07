@@ -244,24 +244,23 @@ button:hover {
 }
 
 #web-development:focus {
-  background-color: #2aa198 !important;
-  transition: all 0.5s ease-in-out !important;
+  background-color: #2aa198;
 }
 
 #html:focus {
-  background-color: #d33682 !important;
+  background-color: #d33682;
 }
 
 #css:focus {
-  background-color: #edac35 !important;
+  background-color: #edac35;
 }
 
 #javascript:focus {
-  background-color: #268bd2 !important;
+  background-color: #268bd2;
 }
 
 #jquery:focus {
-  background-color: #cb4b16 !important;
+  background-color: #cb4b16;
 }
 
 .first-wrapper {
