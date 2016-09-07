@@ -129,6 +129,7 @@ section:nth-child(even) {
 #web-development-description {
   width: 100%;
   height: 100%;
+  min-height: 160px;
   margin: 0;
   display: none;
   border: 2px solid #2aa198;
@@ -145,6 +146,7 @@ section:nth-child(even) {
 #html-description {
   width: 100%;
   height: 100%;
+  min-height: 160px;
   margin: 0;
   display: none;
   border: 2px solid #d33682;
@@ -161,6 +163,7 @@ section:nth-child(even) {
 #css-description {
   width: 100%;
   height: 100%;
+  min-height: 160px;
   margin: 0;
   display: none;
   border: 2px solid #edac35;
@@ -177,12 +180,13 @@ section:nth-child(even) {
 #javascript-description {
   width: 100%;
   height: 100%;
+  min-height: 160px;
   margin: 0;
   display: none;
   border: 2px solid #268bd2;
   border-radius: 4px;
   padding: 28px;
-  text-align: left
+  text-align: left;
 }
 
 #javascript-description p {
@@ -193,12 +197,13 @@ section:nth-child(even) {
 #jquery-description {
   width: 100%;
   height: 100%;
+  min-height: 160px;
   margin: 0;
   display: none;
   border: 2px solid #cb4b16;
   border-radius: 4px;
   padding: 44px;
-  text-align: left
+  text-align: left;
 }
 
 #jquery-description p {
@@ -560,7 +565,7 @@ textarea:focus:-ms-input-placeholder {
 
   p {
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     padding-left: 15px;
     padding-right: 15px;
   }
