@@ -1,6 +1,48 @@
 $(document).ready(function () {
 
 
+  $("#web-development").click(function() {
+    $(this).blur();
+    $(this).toggleClass("teal");
+    $("#html").removeClass("purple");
+    $("#css").removeClass("yellow");
+    $("#javascript").removeClass("blue");
+    $("#jquery").removeClass("orange");
+  })
+  $("#html").click(function() {
+    $(this).blur();
+    $(this).toggleClass("purple");
+    $("#web-development").removeClass("teal");
+    $("#css").removeClass("yellow");
+    $("#javascript").removeClass("blue");
+    $("#jquery").removeClass("orange");
+  })
+  $("#css").click(function() {
+    $(this).blur();
+    $(this).toggleClass("yellow");
+    $("#web-development").removeClass("teal");
+    $("#html").removeClass("purple");
+    $("#javascript").removeClass("blue");
+    $("#jquery").removeClass("orange");
+  })
+  $("#javascript").click(function() {
+    $(this).blur();
+    $(this).toggleClass("blue");
+    $("#web-development").removeClass("teal");
+    $("#html").removeClass("purple");
+    $("#css").removeClass("yellow");
+    $("#jquery").removeClass("orange");
+  })
+  $("#jquery").click(function() {
+    $(this).blur();
+    $(this).toggleClass("orange");
+    $("#web-development").removeClass("teal");
+    $("#html").removeClass("purple");
+    $("#css").removeClass("yellow");
+    $("#javascript").removeClass("blue");
+  })
+
+
   $("#web-development").click(function () {
     if ($("#web-development-description").css("display") === "none") {
       $("#skills").css("padding", "0");
