@@ -3,6 +3,22 @@
   src: url(../fonts/Raleway-Thin.ttf);
 }
 
+#go-top {
+  position: fixed;
+  display: inline;
+  opacity: 0;
+  right: 48px;
+  top: 32px;
+  color: #c8d0d0;
+  font-size: 16px;
+  z-index: 100;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#go-top:hover {
+  color: #FFFFFF;
+}
+
 body {
   background-color: #3e4e54;
   font-family: "Open Sans", "Droid Sans", Helvetica, sans-serif;
@@ -568,6 +584,10 @@ textarea:focus:-ms-input-placeholder {
 }
 
 @media all and (max-width: 640px) {
+  #go-top {
+    display: none;
+  }
+
   #intro {
     width: 100%;
   }

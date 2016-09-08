@@ -54,5 +54,17 @@ $(document).ready(function() {
         $("#jquery-description").fadeOut(500);
     }
   })
+  
 
+
+  var offset = 50;
+ 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > offset) {
+      $("#go-top").css("opacity", "1");
+    } else {
+      $("#go-top").css("opacity", "0");
+    }
+  })
+ 
 });
