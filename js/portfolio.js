@@ -42,6 +42,16 @@ $(document).ready(function () {
     $("#javascript").removeClass("blue");
   })
 
+  
+  $(document).click(function () {
+    $("button").removeClass("teal purple yellow blue orange");
+    $("#description > div").fadeOut(500);
+  });
+
+  $("button").click(function (e) {
+    e.stopPropagation(); // this stops the event from bubbling up to the body
+  });
+
 
   $("#web-development").click(function () {
     if ($("#web-development-description").css("display") === "none") {
