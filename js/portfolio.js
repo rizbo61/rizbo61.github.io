@@ -4,42 +4,27 @@ $(document).ready(function () {
   $("#web-development").click(function() {
     $(this).blur();
     $(this).toggleClass("teal");
-    $("#html").removeClass("purple");
-    $("#css").removeClass("yellow");
-    $("#javascript").removeClass("blue");
-    $("#jquery").removeClass("orange");
+    $("#html, #css, #javascript, #jquery").removeClass("teal purple yellow blue orange");
   })
   $("#html").click(function() {
     $(this).blur();
     $(this).toggleClass("purple");
-    $("#web-development").removeClass("teal");
-    $("#css").removeClass("yellow");
-    $("#javascript").removeClass("blue");
-    $("#jquery").removeClass("orange");
+    $("#web-development, #css, #javascript, #jquery").removeClass("teal purple yellow blue orange");
   })
   $("#css").click(function() {
     $(this).blur();
     $(this).toggleClass("yellow");
-    $("#web-development").removeClass("teal");
-    $("#html").removeClass("purple");
-    $("#javascript").removeClass("blue");
-    $("#jquery").removeClass("orange");
+    $("#web-development, #html, #javascript, #jquery").removeClass("teal purple yellow blue orange");
   })
   $("#javascript").click(function() {
     $(this).blur();
     $(this).toggleClass("blue");
-    $("#web-development").removeClass("teal");
-    $("#html").removeClass("purple");
-    $("#css").removeClass("yellow");
-    $("#jquery").removeClass("orange");
+    $("#web-development, #html, #css, #jquery").removeClass("teal purple yellow blue orange");
   })
   $("#jquery").click(function() {
     $(this).blur();
     $(this).toggleClass("orange");
-    $("#web-development").removeClass("teal");
-    $("#html").removeClass("purple");
-    $("#css").removeClass("yellow");
-    $("#javascript").removeClass("blue");
+    $("#web-development, #html, #css, #javascript").removeClass("teal purple yellow blue orange");
   })
 
   
