@@ -4,38 +4,40 @@ $(document).ready(function () {
   $("#web-development").click(function() {
     $(this).blur();
     $(this).toggleClass("teal");
-    $("#html, #css, #javascript, #jquery").removeClass("teal purple yellow blue orange");
+    $("#html, #css, #javascript, #jquery").removeClass();
   })
   $("#html").click(function() {
     $(this).blur();
     $(this).toggleClass("purple");
-    $("#web-development, #css, #javascript, #jquery").removeClass("teal purple yellow blue orange");
+    $("#web-development, #css, #javascript, #jquery").removeClass();
   })
   $("#css").click(function() {
     $(this).blur();
     $(this).toggleClass("yellow");
-    $("#web-development, #html, #javascript, #jquery").removeClass("teal purple yellow blue orange");
+    $("#web-development, #html, #javascript, #jquery").removeClass();
   })
   $("#javascript").click(function() {
     $(this).blur();
     $(this).toggleClass("blue");
-    $("#web-development, #html, #css, #jquery").removeClass("teal purple yellow blue orange");
+    $("#web-development, #html, #css, #jquery").removeClass();
   })
   $("#jquery").click(function() {
     $(this).blur();
     $(this).toggleClass("orange");
-    $("#web-development, #html, #css, #javascript").removeClass("teal purple yellow blue orange");
+    $("#web-development, #html, #css, #javascript").removeClass();
   })
 
   
+  
   $(document).click(function () {
-    $("button").removeClass("teal purple yellow blue orange");
+    $("button").removeClass();
     $("#description > div").fadeOut(500);
   });
 
   $("button").click(function (e) {
     e.stopPropagation(); // this stops the event from bubbling up to the body
   });
+
 
 
   $("#web-development").click(function () {
@@ -47,7 +49,6 @@ $(document).ready(function () {
       $("#web-development-description").fadeOut(500);
     }
   })
-
   $("#html").click(function () {
     if ($("#html-description").css("display") === "none") {
       $("#skills").css("padding", "0");
@@ -57,7 +58,6 @@ $(document).ready(function () {
       $("#html-description").fadeOut(500);
     }
   })
-
   $("#css").click(function () {
     if ($("#css-description").css("display") === "none") {
       $("#skills").css("padding", "0");
@@ -67,7 +67,6 @@ $(document).ready(function () {
       $("#css-description").fadeOut(500);
     }
   })
-
   $("#javascript").click(function () {
     if ($("#javascript-description").css("display") === "none") {
       $("#skills").css("padding", "0");
@@ -77,7 +76,6 @@ $(document).ready(function () {
       $("#javascript-description").fadeOut(500);
     }
   })
-
   $("#jquery").click(function () {
     if ($("#jquery-description").css("display") === "none") {
       $("#skills").css("padding", "0");

@@ -249,11 +249,13 @@ button {
   margin-top: 2.5%;
   margin-left: 5px;
   margin-right: 5px;
+  padding: 6px 12px;
   background-color: transparent;
   color: #c8d0d0 !important;
   font-weight: bold !important;
   font-size: 16px !important;
   border: 2px solid !important;
+  border-radius: 4px;
   transition: background-color 0.5s ease-in-out !important;
 }
 
