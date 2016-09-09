@@ -2,73 +2,83 @@ $(document).ready(function () {
 
 
   $("#web-development").click(function () {
+    $("#description").show();
+    $("#skills").css("padding", "0");
+    $("button:not(#web-development)").removeClass();
     $(this).blur();
-    $(this).toggleClass("teal");
-    $("#html, #css, #javascript, #jquery").removeClass();
+    $(this).stop().toggleClass("teal");
+    $("#description > div:not(#web-development-description)").fadeOut(300).promise().done(function () {
 
-    if ($("#web-development-description").css("display") === "none") {
-      $("#skills").css("padding", "0");
-      $("#description").show().children().hide();
-      $("#web-development-description").fadeIn(500);
-    } else {
-      $("#web-development-description").fadeOut(500);
-    }
+      $("#web-development-description").fadeToggle(300);
+    });
+
+    /* if ($("#web-development-description").css("display") === "none") {
+       $("#skills").css("padding", "0");
+       $("#description").show().children().hide();
+       $("#web-development-description").fadeIn(500);
+     } else {
+       $("#web-development-description").fadeOut(500);
+     }*/
   });
 
   $("#html").click(function () {
+    $("#description").show();
+    $("#skills").css("padding", "0");
+    $("button:not(#html)").removeClass();
     $(this).blur();
-    $(this).toggleClass("purple");
-    $("#web-development, #css, #javascript, #jquery").removeClass();
+    $(this).stop().toggleClass("purple");
+    $("#description > div:not(#html-description)").fadeOut(300).promise().done(function () {
 
-    if ($("#html-description").css("display") === "none") {
+      $("#html-description").fadeToggle(300);
+    });
+
+
+    /*if ($("#html-description").css("display") === "none") {
       $("#skills").css("padding", "0");
       $("#description").show().children().hide();
       $("#html-description").fadeIn(500);
     } else {
       $("#html-description").fadeOut(500);
-    }
+    }*/
   });
 
   $("#css").click(function () {
+    $("#description").show();
+    $("#skills").css("padding", "0");
+    $("button:not(#css)").removeClass();
     $(this).blur();
-    $(this).toggleClass("yellow");
-    $("#web-development, #html, #javascript, #jquery").removeClass();
+    $(this).stop().toggleClass("yellow");
+    $("#description > div:not(#css-description)").fadeOut(300).promise().done(function () {
 
-    if ($("#css-description").css("display") === "none") {
-      $("#skills").css("padding", "0");
-      $("#description").show().children().hide();
-      $("#css-description").fadeIn(500);
-    } else {
-      $("#css-description").fadeOut(500);
-    }
+      $("#css-description").fadeToggle(300);
+    });
+
   });
 
   $("#javascript").click(function () {
+    $("#description").show();
+    $("#skills").css("padding", "0");
+    $("button:not(#javascript)").removeClass();
     $(this).blur();
-    $(this).toggleClass("blue");
-    $("#web-development, #html, #css, #jquery").removeClass();
+    $(this).stop().toggleClass("blue");
+    $("#description > div:not(#javascript-description)").fadeOut(300).promise().done(function () {
 
-    if ($("#javascript-description").css("display") === "none") {
-      $("#skills").css("padding", "0");
-      $("#description").show().children().hide();
-      $("#javascript-description").fadeIn(500);
-    } else {
-      $("#javascript-description").fadeOut(500);
-    }
+      $("#javascript-description").fadeToggle(300);
+    });
+
   });
 
   $("#jquery").click(function () {
+    $("#description").show();
+    $("#skills").css("padding", "0");
+    $("button:not(#jquery)").removeClass();
     $(this).blur();
-    $(this).toggleClass("orange");
-    $("#web-development, #html, #css, #javascript").removeClass();
+    $(this).stop().toggleClass("orange");
+    $("#description > div:not(#jquery-description)").fadeOut(300).promise().done(function () {
 
-    if ($("#jquery-description").css("display") === "none") {
-      $("#skills").css("padding", "0");
-      $("#description").show().children().hide();
-      $("#jquery-description").fadeIn(500);
-    } else {
-      $("#jquery-description").fadeOut(500);
-    }
+      $("#jquery-description").fadeToggle(300);
+    });
+
   });
 
   $(document).click(function () {

@@ -149,6 +149,7 @@ section:nth-child(even) {
   border: none;
   padding: 0;
   opacity: 0.8;
+  overflow: hidden;
 }
 
 #web-development-description {
