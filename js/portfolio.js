@@ -25,7 +25,7 @@ $(document).ready(function () {
     $(this).blur();
     $(this).stop().toggleClass("purple");
     
-    $("description > div").stop(true, true);
+    $("#description > div").stop(true, true);
     $("#description > div:not(#html-description)").fadeOut(200).promise().done(function () {
       $("#html-description").fadeToggle(200);
     });
@@ -38,7 +38,7 @@ $(document).ready(function () {
     $(this).blur();
     $(this).stop().toggleClass("yellow");
 
-    $("description > div").stop(true, true);
+    $("#description > div").stop(true, true);
     $("#description > div:not(#css-description)").fadeOut(200).promise().done(function () {
       $("#css-description").fadeToggle(200);
     });
@@ -51,7 +51,7 @@ $(document).ready(function () {
     $(this).blur();
     $(this).stop().toggleClass("blue");
 
-    $("description > div").stop(true, true);
+    $("#description > div").stop(true, true);
     $("#description > div:not(#javascript-description)").fadeOut(200).promise().done(function () {
       $("#javascript-description").fadeToggle(200);
     });
@@ -64,7 +64,7 @@ $(document).ready(function () {
     $(this).blur();
     $(this).stop().toggleClass("orange");
 
-    $("description > div").stop(true, true);
+    $("#description > div").stop(true, true);
     $("#description > div:not(#jquery-description)").fadeOut(200).promise().done(function () {
       $("#jquery-description").fadeToggle(200);
     });
