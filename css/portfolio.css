@@ -4,6 +4,7 @@
 }
 
 html {
+  transform: translate3d(0, 0, 0);
   overflow-y: scroll;
 }
 
@@ -123,6 +124,7 @@ section:nth-child(even) {
 #background {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 #background::after {
@@ -495,8 +497,7 @@ textarea:focus:-ms-input-placeholder {
 
 #tribute-page::after {
   content: "";
-  background: url("../images/tribute-page.png");
-  background-position: 50% 40%;
+  background: url("../images/tribute-page-sm.png");
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -530,8 +531,7 @@ textarea:focus:-ms-input-placeholder {
 
 #sketch-pad::after {
   content: "";
-  background: url("../images/sketch-pad.png");
-  background-position: 30% 0%;
+  background: url("../images/sketch-pad-sm.png");
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -565,8 +565,7 @@ textarea:focus:-ms-input-placeholder {
 
 #image-slider::after {
   content: "";
-  background: url("../images/image-slider.png");
-  background-position: 50% 10%;
+  background: url("../images/image-slider-sm.png");
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -600,8 +599,7 @@ textarea:focus:-ms-input-placeholder {
 
 #twitch-placeholder::after {
   content: "";
-  background: url("../images/twitch-placeholder.png");
-  background-position: center;
+  background: url("../images/twitch-placeholder-sm.png");
   opacity: 0.2;
   top: 0;
   left: 0;
