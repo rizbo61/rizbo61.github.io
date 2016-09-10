@@ -3,6 +3,10 @@
   src: url(../fonts/Raleway-Thin.ttf);
 }
 
+html {
+  overflow-y: scroll;
+}
+
 #go-top {
   position: fixed;
   display: inline;
@@ -35,7 +39,7 @@ h1 {
 
 p {
   font-size: 20px;
-  
+  text-align: center;
 }
 
 #header {
@@ -104,10 +108,13 @@ nav a:hover {
 }
 
 section {
+  display: none;
   padding-top: 50px;
   padding-bottom: 60px;
   width: 100%;
 }
+
+
 
 section:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.04);
