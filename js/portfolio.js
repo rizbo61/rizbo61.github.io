@@ -1,11 +1,6 @@
 $(document).ready(function () {
 
 
-  $("#skills > button").click(function() {
-    $("#description").show();
-    $("#skills").css("padding", "0");
-  });
-
   $("#web-development").click(function () {
 
     $("button:not(#web-development)").removeClass();

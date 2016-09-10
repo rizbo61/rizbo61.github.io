@@ -35,7 +35,7 @@ h1 {
 
 p {
   font-size: 20px;
-  text-align: center;
+  
 }
 
 #header {
@@ -141,95 +141,118 @@ section:nth-child(even) {
 }
 
 #description {
-  width: 57.3%;
-  min-height: 160px;
-  height: auto;
+  max-width: 95%;
+  width: 1054px;
+  height: 180px;
   margin: 30px auto auto auto;
-  display: none;
+  display: block;
   border: none;
-  padding: 0;
   opacity: 0.8;
-  overflow: auto;
 }
 
 #web-development-description {
+  position: relative;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
-  min-height: 160px;
-  margin: 0;
   display: none;
   border: 2px solid #2aa198;
   border-radius: 4px;
-  padding: 22px;
+  overflow: auto;
 }
 
 #web-development-description p {
+  max-height: 180px;
   font-size: 16px;
-  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px;
 }
 
 #html-description {
+  position: relative;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
-  min-height: 160px;
-  margin: 0;
   display: none;
   border: 2px solid #d33682;
   border-radius: 4px;
-  padding: 32px;
+  overflow: auto;
 }
 
 #html-description p {
+  max-height: 180px;
   font-size: 16px;
-  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px;
 }
 
 #css-description {
+  position: relative;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
-  min-height: 160px;
-  margin: 0;
   display: none;
   border: 2px solid #edac35;
   border-radius: 4px;
-  padding: 22px;
+  overflow: auto;
 }
 
 #css-description p {
+  max-height: 180px;
   font-size: 16px;
-  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px;
 }
 
 #javascript-description {
+  position: relative;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
-  min-height: 160px;
-  margin: 0;
   display: none;
   border: 2px solid #268bd2;
   border-radius: 4px;
-  padding: 28px;
+  overflow: auto;
 }
 
 #javascript-description p {
+  max-height: 180px;
   font-size: 16px;
-  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px;
 }
 
 #jquery-description {
+  position: relative;
+  margin: 0 auto;
   width: 100%;
   height: 100%;
-  min-height: 160px;
-  margin: 0;
   display: none;
   border: 2px solid #cb4b16;
   border-radius: 4px;
-  padding: 44px;
+  overflow: auto;
 }
 
 #jquery-description p {
+  max-height: 180px;
   font-size: 16px;
-  margin: 0;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 20px;
 }
 
 
@@ -240,8 +263,7 @@ section:nth-child(even) {
   display: flex;       
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 0 auto;
-  padding: 180px 0 0 0;
+  margin: auto;
   width: 60%;
 }
 
@@ -626,36 +648,17 @@ textarea:focus:-ms-input-placeholder {
   }
 
   #description {
-    width: 90%;
+    margin-bottom: 25px;
+    height: 200px;
   }
 
   #description p {
-    padding: 0;
+    text-align: left;
+    margin: 0;
   }
-
-  #web-development-description {
-    padding: 15px;
-  }
-
-  #html-description {
-    padding: 15px;
-  }
-
-  #css-description {
-    padding: 15px;
-  }
-
-  #javascript-description {
-    padding: 15px;
-  }
-
-  #jquery-description {
-    padding: 15px;
-  }
-
+ 
   #skills {
     width: 100%;
-    padding-top: 100px;
   }
 
   .first-wrapper {
