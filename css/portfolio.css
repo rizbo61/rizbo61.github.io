@@ -4,7 +4,6 @@
 }
 
 html {
-  transform: translate3d(0, 0, 0);
   overflow-y: scroll;
 }
 
@@ -129,7 +128,8 @@ section:nth-child(even) {
 
 #background::after {
   content: "";
-  background: url("../images/background.png");
+  background: url("../images/backgroundtest.png");
+  position: fixed;
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -137,11 +137,6 @@ section:nth-child(even) {
   right: 0;
   position: absolute;
   z-index: -1;   
-  -webkit-filter: blur(2px) grayscale(100%);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
-  filter: blur(2px) grayscale(100%);
 }
 
 #intro {
@@ -305,26 +300,6 @@ button:hover {
   color: #FFFFFF !important;
 }
 
-
-#web-development:focus {
-  background-color: #2aa198;
-}
-
-#html:focus {
-  background-color: #d33682;
-}
-
-#css:focus {
-  background-color: #edac35;
-}
-
-#javascript:focus {
-  background-color: #268bd2;
-}
-
-#jquery:focus {
-  background-color: #cb4b16;
-}
 
 .teal {
   background-color: #2aa198;
@@ -493,11 +468,13 @@ textarea:focus:-ms-input-placeholder {
 #tribute-page {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 #tribute-page::after {
   content: "";
   background: url("../images/tribute-page-sm.png");
+  background-repeat: no-repeat;
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -527,11 +504,13 @@ textarea:focus:-ms-input-placeholder {
 #sketch-pad {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 #sketch-pad::after {
   content: "";
   background: url("../images/sketch-pad-sm.png");
+  background-repeat: no-repeat;
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -561,11 +540,13 @@ textarea:focus:-ms-input-placeholder {
 #image-slider {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 #image-slider::after {
   content: "";
   background: url("../images/image-slider-sm.png");
+  background-repeat: no-repeat;
   opacity: 0.2;
   top: 0;
   left: 0;
@@ -595,11 +576,13 @@ textarea:focus:-ms-input-placeholder {
 #twitch-placeholder {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 
 #twitch-placeholder::after {
   content: "";
   background: url("../images/twitch-placeholder-sm.png");
+  background-repeat: no-repeat;
   opacity: 0.2;
   top: 0;
   left: 0;

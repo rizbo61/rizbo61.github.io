@@ -3,7 +3,6 @@ $(document).ready(function () {
   
   $("section").slideDown(2000);
 
-
   $("#web-development").click(function () {
 
     $("button:not(#web-development)").removeClass();
