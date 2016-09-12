@@ -4,6 +4,7 @@
 }
 
 html {
+  -ms-overflow-style: scrollbar;  /* Fixes scrollbar overlapping content in IE */
   overflow-y: scroll;
 }
 
@@ -369,6 +370,154 @@ button:hover {
   z-index: 2;
 }
 
+#tribute-page {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#tribute-page::after {
+  content: "";
+  background: url("../images/tribute-page-sm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  -webkit-filter: blur(1px) grayscale(100%);
+  -moz-filter: blur(1px) grayscale(100%);
+  -o-filter: blur(1px) grayscale(100%);
+  -ms-filter: blur(1px) grayscale(100%);
+  filter: blur(1px) grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+#tribute-page:hover::after {
+  opacity: 1;
+  z-index: 1;
+  -webkit-filter: blur(0px) grayscale(0%);
+  -moz-filter: blur(0px) grayscale(0%);
+  -o-filter: blur(0px) grayscale(0%);
+  -ms-filter: blur(0px) grayscale(0%);
+  filter: blur(0px) grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+#sketch-pad {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#sketch-pad::after {
+  content: "";
+  background: url("../images/sketch-pad-sm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  -webkit-filter: blur(1px) grayscale(100%);
+  -moz-filter: blur(1px) grayscale(100%);
+  -o-filter: blur(1px) grayscale(100%);
+  -ms-filter: blur(1px) grayscale(100%);
+  filter: blur(1px) grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+#sketch-pad:hover::after {
+  opacity: 1;
+  z-index: 1;
+  -webkit-filter: blur(0px) grayscale(0%);
+  -moz-filter: blur(0px) grayscale(0%);
+  -o-filter: blur(0px) grayscale(0%);
+  -ms-filter: blur(0px) grayscale(0%);
+  filter: blur(0px) grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+#image-slider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#image-slider::after {
+  content: "";
+  background: url("../images/image-slider-sm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  -webkit-filter: blur(1px) grayscale(100%);
+  -moz-filter: blur(1px) grayscale(100%);
+  -o-filter: blur(1px) grayscale(100%);
+  -ms-filter: blur(1px) grayscale(100%);
+  filter: blur(1px) grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+#image-slider:hover::after {
+  opacity: 1;
+  z-index: 1;
+  -webkit-filter: blur(0px) grayscale(0%);
+  -moz-filter: blur(0px) grayscale(0%);
+  -o-filter: blur(0px) grayscale(0%);
+  -ms-filter: blur(0px) grayscale(0%);
+  filter: blur(0px) grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
+#twitch-placeholder {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#twitch-placeholder::after {
+  content: "";
+  background: url("../images/twitch-placeholder-sm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  -webkit-filter: blur(1px) grayscale(100%);
+  -moz-filter: blur(1px) grayscale(100%);
+  -o-filter: blur(1px) grayscale(100%);
+  -ms-filter: blur(1px) grayscale(100%);
+  filter: blur(1px) grayscale(100%);
+  transition: all 0.5s ease-in-out;
+}
+
+#twitch-placeholder:hover::after {
+  opacity: 1;
+  z-index: 1;
+  -webkit-filter: blur(0px) grayscale(0%);
+  -moz-filter: blur(0px) grayscale(0%);
+  -o-filter: blur(0px) grayscale(0%);
+  -ms-filter: blur(0px) grayscale(0%);
+  filter: blur(0px) grayscale(0%);
+  transition: all 0.5s ease-in-out;
+}
+
 #contact-form {
   width: 25%;
   margin: auto;
@@ -460,149 +609,6 @@ textarea:focus:-ms-input-placeholder {
   color: #268bd2;
 }
 
-#tribute-page {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-#tribute-page::after {
-  content: "";
-  background: url("../images/tribute-page-sm.png");
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  -webkit-filter: blur(1px) grayscale(100%);
-  -moz-filter: blur(1px) grayscale(100%);
-  -o-filter: blur(1px) grayscale(100%);
-  -ms-filter: blur(1px) grayscale(100%);
-  filter: blur(1px) grayscale(100%);
-  transition: all 0.5s ease-in-out;
-}
-
-#tribute-page:hover::after {
-  opacity: 1;
-  z-index: 1;
-  -webkit-filter: blur(0px) grayscale(0%);
-  -moz-filter: blur(0px) grayscale(0%);
-  -o-filter: blur(0px) grayscale(0%);
-  -ms-filter: blur(0px) grayscale(0%);
-  filter: blur(0px) grayscale(0%);
-  transition: all 0.5s ease-in-out;
-}
-
-#sketch-pad {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-#sketch-pad::after {
-  content: "";
-  background: url("../images/sketch-pad-sm.png");
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  -webkit-filter: blur(1px) grayscale(100%);
-  -moz-filter: blur(1px) grayscale(100%);
-  -o-filter: blur(1px) grayscale(100%);
-  -ms-filter: blur(1px) grayscale(100%);
-  filter: blur(1px) grayscale(100%);
-  transition: all 0.5s ease-in-out;
-}
-
-#sketch-pad:hover::after {
-  opacity: 1;
-  z-index: 1;
-  -webkit-filter: blur(0px) grayscale(0%);
-  -moz-filter: blur(0px) grayscale(0%);
-  -o-filter: blur(0px) grayscale(0%);
-  -ms-filter: blur(0px) grayscale(0%);
-  filter: blur(0px) grayscale(0%);
-  transition: all 0.5s ease-in-out;
-}
-
-#image-slider {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-#image-slider::after {
-  content: "";
-  background: url("../images/image-slider-sm.png");
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  -webkit-filter: blur(1px) grayscale(100%);
-  -moz-filter: blur(1px) grayscale(100%);
-  -o-filter: blur(1px) grayscale(100%);
-  -ms-filter: blur(1px) grayscale(100%);
-  filter: blur(1px) grayscale(100%);
-  transition: all 0.5s ease-in-out;
-}
-
-#image-slider:hover::after {
-  opacity: 1;
-  z-index: 1;
-  -webkit-filter: blur(0px) grayscale(0%);
-  -moz-filter: blur(0px) grayscale(0%);
-  -o-filter: blur(0px) grayscale(0%);
-  -ms-filter: blur(0px) grayscale(0%);
-  filter: blur(0px) grayscale(0%);
-  transition: all 0.5s ease-in-out;
-}
-
-#twitch-placeholder {
-  display: block;
-  position: relative;
-  overflow: hidden;
-}
-
-#twitch-placeholder::after {
-  content: "";
-  background: url("../images/twitch-placeholder-sm.png");
-  background-repeat: no-repeat;
-  opacity: 0.2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  -webkit-filter: blur(1px) grayscale(100%);
-  -moz-filter: blur(1px) grayscale(100%);
-  -o-filter: blur(1px) grayscale(100%);
-  -ms-filter: blur(1px) grayscale(100%);
-  filter: blur(1px) grayscale(100%);
-  transition: all 0.5s ease-in-out;
-}
-
-#twitch-placeholder:hover::after {
-  opacity: 1;
-  z-index: 1;
-  -webkit-filter: blur(0px) grayscale(0%);
-  -moz-filter: blur(0px) grayscale(0%);
-  -o-filter: blur(0px) grayscale(0%);
-  -ms-filter: blur(0px) grayscale(0%);
-  filter: blur(0px) grayscale(0%);
-  transition: all 0.5s ease-in-out;
-}
 
 @media all and (max-width: 1000px) {
   #contact-form {
@@ -682,3 +688,4 @@ textarea:focus:-ms-input-placeholder {
     padding-right: 15px;
   }
 }
+
