@@ -99,6 +99,10 @@ nav a:visited {
   color: #c8d0d0;
 }
 
+nav a:focus {
+  color: #c8d0d0;
+}
+
 nav a:hover {
   color: #FFFFFF;
 }
@@ -274,12 +278,12 @@ button {
   margin-right: 2%;
   padding: 6px 12px;
   background-color: transparent;
-  color: #c8d0d0 !important;
-  font-weight: bold !important;
-  font-size: 16px !important;
-  border: 2px solid !important;
+  color: #c8d0d0;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid;
   border-radius: 4px;
-  transition: background-color 0.5s ease-in-out !important;
+  transition: background-color 0.5s ease-in-out;
 }
 
 button:visited {
