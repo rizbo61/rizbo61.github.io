@@ -146,7 +146,7 @@ section:nth-child(even) {
 
 #description {
   max-width: 95%;
-  width: 1054px;
+  width: 1053.5px;
   height: 180px;
   margin: 30px auto auto auto;
   display: block;
@@ -427,7 +427,7 @@ textarea {
   background-color: transparent;
   color: #c8d0d0;
   word-wrap: break-word !important;
-  resize: vertical;
+  resize: none;
 }
 
 textarea:focus {

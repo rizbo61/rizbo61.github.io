@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  
+
   $("section").slideDown(2000);
 
   $("#web-development").click(function () {
@@ -17,11 +17,11 @@ $(document).ready(function () {
   });
 
   $("#html").click(function () {
-    
+
     $("button:not(#html)").removeClass();
     $(this).blur();
     $(this).stop().toggleClass("purple");
-    
+
     $("#description > div").stop(true, true);
     $("#description > div:not(#html-description)").fadeOut(200).promise().done(function () {
       $("#html-description").fadeToggle(200);
@@ -30,7 +30,7 @@ $(document).ready(function () {
   });
 
   $("#css").click(function () {
-   
+
     $("button:not(#css)").removeClass();
     $(this).blur();
     $(this).stop().toggleClass("yellow");
@@ -43,7 +43,7 @@ $(document).ready(function () {
   });
 
   $("#javascript").click(function () {
-    
+
     $("button:not(#javascript)").removeClass();
     $(this).blur();
     $(this).stop().toggleClass("blue");
@@ -56,7 +56,7 @@ $(document).ready(function () {
   });
 
   $("#jquery").click(function () {
-    
+
     $("button:not(#jquery)").removeClass();
     $(this).blur();
     $(this).stop().toggleClass("orange");
