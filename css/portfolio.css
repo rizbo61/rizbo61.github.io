@@ -145,8 +145,8 @@ section:nth-child(even) {
 }
 
 #description {
-  max-width: 95%;
-  width: 1053.5px;
+  width: 80%;
+  max-width: 1045px;
   height: 180px;
   margin: 30px auto auto auto;
   display: block;
@@ -162,12 +162,12 @@ section:nth-child(even) {
   display: none;
   border: 2px solid #2aa198;
   border-radius: 4px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #web-development-description p {
   max-height: 180px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -183,12 +183,12 @@ section:nth-child(even) {
   display: none;
   border: 2px solid #d33682;
   border-radius: 4px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #html-description p {
   max-height: 180px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -204,12 +204,12 @@ section:nth-child(even) {
   display: none;
   border: 2px solid #edac35;
   border-radius: 4px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #css-description p {
   max-height: 180px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -225,12 +225,12 @@ section:nth-child(even) {
   display: none;
   border: 2px solid #268bd2;
   border-radius: 4px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #javascript-description p {
   max-height: 180px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -246,12 +246,12 @@ section:nth-child(even) {
   display: none;
   border: 2px solid #cb4b16;
   border-radius: 4px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #jquery-description p {
   max-height: 180px;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   position: absolute;
   top: 50%;
@@ -261,21 +261,17 @@ section:nth-child(even) {
 
 
 #skills {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;       
-  flex-flow: row wrap;
-  justify-content: space-around;
+  text-align:center;
   margin: auto;
   width: 60%;
 }
 
 button {
+  display: inline-block;
   min-width: 170px;
   margin-top: 2.5%;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 2%;
+  margin-right: 2%;
   padding: 6px 12px;
   background-color: transparent;
   color: #c8d0d0 !important;
@@ -636,6 +632,7 @@ textarea:focus:-ms-input-placeholder {
   }
 
   #description {
+    width: 95%;
     margin-bottom: 25px;
     height: 200px;
   }
@@ -644,9 +641,29 @@ textarea:focus:-ms-input-placeholder {
     text-align: left;
     margin: 0;
   }
+
+  #web-development-description {
+    overflow: auto;
+  }
+
+  #html-description {
+    overflow: auto;
+  }
+
+  #css-description {
+    overflow: auto;
+  }
+
+  #javascript-description {
+    overflow: auto;
+  }
+
+  #jquery-description {
+    overflow: auto;
+  }
  
   #skills {
-    width: 100%;
+    width: 80%;
   }
 
   .first-wrapper {
