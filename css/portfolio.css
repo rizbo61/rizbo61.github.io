@@ -609,6 +609,14 @@ textarea:focus:-ms-input-placeholder {
   text-decoration: none !important;
 }
 
+.panel-body a:visited {
+  color: #337ab7;
+}
+
+.panel-body a:focus {
+  color: #337ab7;
+}
+
 .panel-body a:hover {
   color: #268bd2;
 }
