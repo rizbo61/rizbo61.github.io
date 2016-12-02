@@ -169,10 +169,10 @@ section:nth-child(even) {
   font-size: 15px;
   text-align: center;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  top: 50%;                             /* center the element */
+  -webkit-transform: translateY(-50%);  /* center the element */
+  -ms-transform: translateY(-50%);      /* center the element */
+  transform: translateY(-50%);          /* center the element */
   margin: 0 20px;
 }
 
@@ -270,7 +270,7 @@ section:nth-child(even) {
 
 
 #skills {
-  text-align:center;
+  text-align: center;     /* makes buttons centered horizontally */
   margin: auto;
   width: 60%;
 }
@@ -333,7 +333,9 @@ button:hover {
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;  
+  -webkit-flex-flow: nowrap;
   flex-flow: nowrap;
+  -webkit-justify-content: center;
   justify-content: center;
 }
 
@@ -344,7 +346,9 @@ button:hover {
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;  
+  -webkit-flex-flow: nowrap;
   flex-flow: nowrap;
+  -webkit-justify-content: center;
   justify-content: center;
   margin-bottom: 40px;
 }
@@ -490,15 +494,15 @@ button:hover {
   transition: all 0.5s ease-in-out;
 }
 
-#twitch-placeholder {
+#blanje {
   display: block;
   position: relative;
   overflow: hidden;
 }
 
-#twitch-placeholder::after {
+#blanje::after {
   content: "";
-  background: url("../images/twitch-placeholder-sm.png");
+  background: url("../images/blanje-sm.png");
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.2;
@@ -516,7 +520,7 @@ button:hover {
   transition: all 0.5s ease-in-out;
 }
 
-#twitch-placeholder:hover::after {
+#blanje:hover::after {
   opacity: 1;
   z-index: 1;
   -webkit-filter: blur(0px) grayscale(0%);
@@ -547,8 +551,8 @@ input {
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px #3e4e54 inset;
-    -webkit-text-fill-color: #c8d0d0;
+    -webkit-box-shadow: 0 0 0px 1000px #3e4e54 inset;     /* removes the yellow highlight */
+    -webkit-text-fill-color: #c8d0d0;                     /* removes the yellow highlight */
 }
 
 input:focus {
@@ -696,12 +700,14 @@ textarea:focus:-ms-input-placeholder {
 
   .first-wrapper {
     width: 100%;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     margin-top: 40px;
   }
 
   .second-wrapper {
     width: 100%;
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
   }
 
