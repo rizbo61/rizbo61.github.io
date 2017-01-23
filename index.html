@@ -1,117 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <title>Portfolio</title>
-  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap-social.css">
-  <link rel="stylesheet" href="css/portfolio.css">
-</head>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+  </head>
 
-<body>
-  <a name="top"></a>
-  <a href="#top" id="go-top"><span class="glyphicon glyphicon-triangle-top"></span></a>
+  <body>
+    <a name="top"></a>
+    <a href="#top" id="go-top"><span class="glyphicon glyphicon-triangle-top"></span></a>
 
-  <nav id="header">
-    <ul class="left">
-      <li><a href="https://github.com/rizbo61"><span class="fa fa-github"></span></a></li>
-      <li><a href="https://www.facebook.com/boris.muminovic"><span class="fa fa-facebook"></span></a></li>
-      <li><a href="https://twitter.com/rizbo61/"><span class="fa fa-twitter"></span></a></li>
-    </ul>
-    <ul class="right">
-      <li><a href="#about" id="go-about">About</a></li>
-      <li><a href="#projects" id="go-projects">Projects</a></li>
-      <li><a href="#contact" id="go-contact">Contact</a></li>
-    </ul>
-  </nav>
+    <nav id="header">
+      <ul class="left">
+        <li><a href="https://github.com/rizbo61"><span class="fa fa-github"></span></a></li>
+        <li><a href="https://www.facebook.com/boris.muminovic"><span class="fa fa-facebook"></span></a></li>
+        <li><a href="https://twitter.com/rizbo61/"><span class="fa fa-twitter"></span></a></li>
+      </ul>
+      <ul class="right">
+        <li><a href="#about" id="go-about">About</a></li>
+        <li><a href="#projects" id="go-projects">Projects</a></li>
+        <li><a href="#contact" id="go-contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <div class="content-container">
+    <div class="content-container">
 
-    <div id="background">
-      <section id="about">
+      <div id="background">
+        <section id="about">
+          <div id="intro">
+            <h1>About</h1>
+            <p>My name is Boris and I'm a web developer currently learning HTML, CSS, JavaScript and jQuery. You can check my work portfolio and contact information below.</p>
+          </div>
+          <div id="description">
+            <div id="web-development-description">
+              <p>Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web). Web development can range from developing the simplest static single page of plain text to the most complex web-based internet
+                applications, electronic businesses, and social network services. A more comprehensive list of tasks to which web development commonly refers, may include web engineering, web design, web content development, client liaison, client-side/server-side
+                scripting, web server and network security configuration, and e-commerce development.
+              </p>
+            </div>
+            <div id="html-description">
+              <p>HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web. Web browsers
+                receive HTML documents from a webserver or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.</p>
+            </div>
+            <div id="css-description">
+              <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language. Although most often used to set the visual style of web pages and user interfaces written in HTML and
+                XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone technology used by most websites
+                to create visually engaging webpages, user interfaces for web applications, and user interfaces for many mobile applications.
+              </p>
+            </div>
+            <div id="javascript-description">
+              <p>JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It has been standardized in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three core technologies of World Wide Web content
+                production; the majority of websites employ it and it is supported by all modern Web browsers without plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm language, supporting object-oriented,
+                imperative, and functional programming styles.</p>
+            </div>
+            <div id="jquery-description">
+              <p>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. jQuery is the most popular JavaScript library in use today, with installation on 65% of the top 10 million highest-trafficked sites on
+                the Web. jQuery is free, open-source software licensed under the MIT License.</p>
+            </div>
+          </div>
+
+          <div id="skills">
+            <button id="web-development" style="border-color: #2aa198 !important;">Web Development</button>
+            <button id="html" style="border-color: #d33682 !important;">HTML</button>
+            <button id="css" style="border-color: #edac35 !important;">CSS</button>
+            <button id="javascript" style="border-color: #268bd2 !important;">JavaScript</button>
+            <button id="jquery" style="border-color: #cb4b16 !important;">jQuery</button>
+          </div>
+        </section>
+
+
+      </div>
+
+      <section id="projects">
         <div id="intro">
-          <h1>About</h1>
-          <p>My name is Boris and I'm a web developer currently learning HTML, CSS, JavaScript and jQuery. You can check my
-            work portfolio and contact information below.</p>
+          <h1>Projects</h1>
         </div>
-        <div id="description">
-          <div id="web-development-description">
-            <p>Web development is a broad term for the work involved in developing a web site for the Internet (World Wide Web).
-              Web development can range from developing the simplest static single page of plain text to the most complex
-              web-based internet applications, electronic businesses, and social network services. A more comprehensive list
-              of tasks to which web development commonly refers, may include web engineering, web design, web content development,
-              client liaison, client-side/server-side scripting, web server and network security configuration, and e-commerce
-              development.
-            </p>
+        <div class="first-wrapper">
+          <div class="project-image" id="tribute-page">
+            <a href="https://rizbo61.github.io/tribute-page" target="_blank"><span></span></a>
+            <h2>Tribute Page</h2>
           </div>
-          <div id="html-description">
-            <p>HyperText Markup Language (HTML) is the standard markup language for creating web pages and web applications.
-              With Cascading Style Sheets (CSS), and JavaScript, it forms a triad of cornerstone technologies for the World
-              Wide Web. Web browsers receive HTML documents from a webserver or from local storage and render them into multimedia
-              web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance
-              of the document.</p>
-          </div>
-          <div id="css-description">
-            <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written
-              in a markup language. Although most often used to set the visual style of web pages and user interfaces written
-              in HTML and XHTML, the language can be applied to any XML document, including plain XML, SVG and XUL, and is
-              applicable to rendering in speech, or on other media. Along with HTML and JavaScript, CSS is a cornerstone
-              technology used by most websites to create visually engaging webpages, user interfaces for web applications,
-              and user interfaces for many mobile applications.
-            </p>
-          </div>
-          <div id="javascript-description">
-            <p>JavaScript is a high-level, dynamic, untyped, and interpreted programming language. It has been standardized
-              in the ECMAScript language specification. Alongside HTML and CSS, it is one of the three core technologies
-              of World Wide Web content production; the majority of websites employ it and it is supported by all modern
-              Web browsers without plug-ins. JavaScript is prototype-based with first-class functions, making it a multi-paradigm
-              language, supporting object-oriented, imperative, and functional programming styles.</p>
-          </div>
-          <div id="jquery-description">
-            <p>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. jQuery
-              is the most popular JavaScript library in use today, with installation on 65% of the top 10 million highest-trafficked
-              sites on the Web. jQuery is free, open-source software licensed under the MIT License.</p>
+          <div class="project-image" id="sketch-pad">
+            <a href="https://rizbo61.github.io/sketch-pad" target="_blank"><span></span></a>
+            <h2>Sketch-pad</h2>
           </div>
         </div>
-
-        <div id="skills">
-          <button id="web-development" style="border-color: #2aa198 !important;">Web Development</button>
-          <button id="html" style="border-color: #d33682 !important;">HTML</button>
-          <button id="css" style="border-color: #edac35 !important;">CSS</button>
-          <button id="javascript" style="border-color: #268bd2 !important;">JavaScript</button>
-          <button id="jquery" style="border-color: #cb4b16 !important;">jQuery</button>
+        <div class="second-wrapper">
+          <div class="project-image" id="image-slider">
+            <a href="https://rizbo61.github.io/image-slider" target="_blank"><span></span></a>
+            <h2>Image Slider</h2>
+          </div>
+          <div class="project-image" id="blanje">
+            <a href="https://rizbo61.github.io/blanje/" target="_blank"><span></span></a>
+            <h2>Blanje</h2>
+          </div>
         </div>
-      </section>
-
-
+        <div class="third-wrapper">
+          <div class="project-image" id="omdb">
+            <a href="https://rizbo61.github.io/omdb/" target="_blank"><span></span></a>
+            <h2>Movie Search</h2>
+            <p><small>(Can't run on GitHub Pages)</small></p>
+          </div>
+        </div>
     </div>
-
-    <section id="projects">
-      <div id="intro">
-        <h1>Projects</h1>
-      </div>
-      <div class="first-wrapper">
-        <div class="project-image" id="tribute-page">
-          <a href="https://rizbo61.github.io/tribute-page" target="_blank"><span></span></a>
-          <h2>Tribute Page</h2>
-        </div>
-        <div class="project-image" id="sketch-pad">
-          <a href="https://rizbo61.github.io/sketch-pad" target="_blank"><span></span></a>
-          <h2>Sketch-pad</h2>
-        </div>
-      </div>
-      <div class="second-wrapper">
-        <div class="project-image" id="image-slider">
-          <a href="https://rizbo61.github.io/image-slider" target="_blank"><span></span></a>
-          <h2>Image Slider</h2>
-        </div>
-        <div class="project-image" id="blanje">
-          <a href="https://rizbo61.github.io/blanje/" target="_blank"><span></span></a>
-          <h2>Blanje</h2>
-        </div>
-      </div>
     </section>
 
     <section id="contact">
@@ -133,10 +128,10 @@
       Written and coded by: <a href="https://github.com/rizbo61">Boris M.</a>
     </div>
 
-  </div>
+    </div>
 
-  <script src="js/jquery-3.1.0.min.js"></script>
-  <script src="js/portfolio.js"></script>
-</body>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/portfolio.js"></script>
+  </body>
 
 </html>
